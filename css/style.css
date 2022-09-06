@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Mulish', sans-serif;
+}

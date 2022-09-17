@@ -26,6 +26,26 @@ body {
   margin-right: auto;
   margin-left: 108px;
 }
+.navbar-bottom {
+  background-color: #0A223D;
+}
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 31px 0;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.navbar-menu__link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .search {
   display: flex;

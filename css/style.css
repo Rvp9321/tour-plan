@@ -5,6 +5,7 @@
 body {
   font-family: "Mulish", sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -26,12 +27,12 @@ img {
   padding-bottom: 40px;
   justify-content: space-between;
 }
+.navbar__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-.navbar__menu-button {
-  display: none;
 }
 .navbar-bottom {
   background-color: #0A223D;
@@ -130,7 +131,9 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -148,6 +151,7 @@ img {
     flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #fff;
     cursor: pointer;
@@ -162,4 +166,23 @@ img {
   .logo {
     width: 99px;
   }
+}
+.breadcrump-list {
+  list-style-type: none;
+  padding: 18px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.breadcrump-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrump-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+.breadcrump-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
 }/*# sourceMappingURL=style.css.map */

@@ -185,4 +185,65 @@ img {
 .breadcrump-list__item:not(:last-child)::after {
   content: "/";
   margin-right: 4px;
+}
+
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+.hotel-name {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+.hotel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-info__offer {
+  margin-left: 14px;
+  margin-top: 4px;
+}
+.hotel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hotel-description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.stars {
+  flex-basis: 100%;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
+.rating {
+  width: 65px;
+  height: 45px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.rating-text {
+  font-size: 8px;
+  line-height: 10px;
+}
+.rating-count {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

@@ -245,6 +245,10 @@ img {
   .stars {
     flex-basis: content;
   }
+  .hotel-container {
+    margin: 0;
+    width: 96%;
+  }
   .hotel-name {
     flex-basis: 100%;
   }
@@ -253,6 +257,10 @@ img {
   }
   .hotel-info__text {
     width: 100%;
+  }
+  .hotel-info__name {
+    margin-top: 10px;
+    margin-bottom: 0;
   }
   .hotel-info__rating {
     display: none;

@@ -24,7 +24,7 @@
 @media (max-width: 768px)
   .container
     max-width: 576px
-    width: 92%
+    width: 92%      
   .navbar
     &__search, &__user, &-menu
       display: none
@@ -47,13 +47,19 @@
   .stars
     flex-basis: content
   .hotel
+    &-container
+      margin: 0
+      width: 96%
     &-name
-      flex-basis: 100%
+      flex-basis: 100%      
     &-wrapper
       justify-content: space-between
     &-info
       &__text
         width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
       &__rating
         display: none
       &__offer

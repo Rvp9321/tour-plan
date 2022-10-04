@@ -139,6 +139,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .hotel-info__offer {
   margin-left: 14px;
@@ -166,6 +167,11 @@ img {
   background-color: #EC1F46;
   border-radius: 3px;
   color: #FFFFFF;
+}
+
+.swiper {
+  width: 728px;
+  height: 450px;
 }
 
 .rating {

@@ -453,7 +453,6 @@ img {
   height: 47px;
   background-image: url(../img/quote-left.svg);
   background-repeat: no-repeat;
-  border: 1px solid green;
 }
 .reviews-slider__item:after {
   content: "";
@@ -464,7 +463,6 @@ img {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  border: 1px solid green;
 }
 .reviews-slider__button {
   position: absolute;
@@ -473,7 +471,7 @@ img {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  background-size: 10px;
+  background-size: 30px;
   background-position: center;
   border: none;
   background-color: transparent;

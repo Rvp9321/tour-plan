@@ -582,17 +582,18 @@ img {
   position: absolute;
   margin: 0;
   bottom: 72px;
-  /* left: 26px */  
+  left: 26px;
   z-index: 1;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 80%;
 }
 .activities .card__button {
   position: absolute;
   bottom: 24px;
-  /* left: 26px */
+  left: 26px;
   min-width: 100px;
   height: 30px;
   cursor: pointer;

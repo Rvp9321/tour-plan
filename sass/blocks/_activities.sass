@@ -16,8 +16,7 @@
     height: 255px
     display: flex
     flex-direction: column
-    align-items: flex-start 
-    
+    align-items: flex-start   
     &::after      
         content: ''
         position: absolute
@@ -34,21 +33,22 @@
       object-fit: cover
       border-radius: 6px  
       overflow: hidden  
-      z-index: -1            
+      z-index: -1                
     &__title
       position: absolute
       margin: 0
       bottom: 72px
-      /* left: 26px */  
+      left: 26px  
       z-index: 1    
       color: $white-color
       font-weight: 700
       font-size: 16px
       line-height: 20px
+      width: 80%
     &__button
       position: absolute
       bottom: 24px
-      /* left: 26px */
+      left: 26px
       min-width: 100px
       height: 30px
       cursor: pointer

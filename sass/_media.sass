@@ -12,6 +12,25 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-element    
+      height: 450px
+    &-double
+      &__big-image
+        height: 100%
+      &__information
+        padding-top: 20px
+        padding-bottom: 25px
+      &__description
+        margin-bottom: 24px
+        font-size: 12px
+      &__description
+        margin-bottom: 24px
+      &__room
+        margin-bottom: 24px
+    &-brief
+      &__image
+        height: 190px
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -64,6 +83,23 @@
     height: 255px
     &__item
       margin-bottom: 20px
+  .packages
+    padding-top: 25px
+    &-title
+      font-size: 30px
+      margin-bottom: 50px
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      column-gap: 20px
+      row-gap: 20px
+    &-double      
+      &__big-image
+        width: 50%
+        object-fit: cover      
+      &__description
+        margin-bottom: 34px
+      &__room
+        margin-bottom: 37px
 
 @media (max-width: 768px)
   .container
@@ -145,6 +181,27 @@
   .card
     width: 49%
     height: 255px
+  .packages
+    &-element    
+      height: 425px
+    &-double   
+      &__title
+        margin-bottom: 20px
+      &__big-image
+        height: 100%
+      &__information
+        padding-top: 20px
+        padding-bottom: 25px
+        padding-left: 25px   
+      &__description
+        margin-bottom: 20px
+      &__room
+        margin-bottom: 24px 
+    &-brief
+      &__title
+        margin: 16px 0
+      &__image
+        height: 190px       
       
 @media ( max-width: 576px )
   .logo
@@ -192,5 +249,48 @@
       line-height: 23px
       margin-bottom: 36px
   .card
-    width: 100%
-  
+    width: 100%  
+  .packages
+    padding-bottom: 50px
+    &-wrapper 
+      grid-template-columns: 1fr
+    &-element
+      justify-self: center
+      
+    &-title
+      font-size: 18px
+      margin-bottom: 40px
+    &-double
+      grid-column-end: 2
+      flex-direction: column
+      &__imagewrapper
+        width: 285px
+        height: 190px
+      &__big-image      
+        width: 285px
+        height: 190px
+        object-fit: cover
+        border-radius: 8px 8px 0px 0px
+      &__stars
+        display: none
+      &__title
+        margin: 16px 0
+      &__description
+        display: none  
+      &__information
+        width: 100%  
+        padding: 0 21px 25px 32px  
+      &:before        
+        content: 'Flash Offer'           
+        top: 26px
+        width: 60px
+        height: 18px      
+        border-radius: 0px 4px 4px 0px
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 18px  
+    &-brief
+      &__image
+        width: 285px
+      

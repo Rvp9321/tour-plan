@@ -780,6 +780,42 @@ img {
   margin-bottom: 24px;
 }
 
+.footer {
+  background-color: #0A223D;
+}
+.footer-wrapper {
+  padding-top: 108px;
+  padding-bottom: 46px;
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: repeat(4, minmax(160px, 260px));
+}
+.footer__title {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer__item {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

@@ -1038,12 +1038,15 @@ img {
   }
   .hotel-slider {
     width: 100%;
+    margin-bottom: 30px;
+  }
+  .hotel-slider__img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .hotel-right {
     flex-direction: row;
-  }
-  .hotel__slider {
-    margin-bottom: 30px;
   }
   .booking {
     width: 340px;

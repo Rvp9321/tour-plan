@@ -1154,7 +1154,8 @@ img {
   body {
     padding-top: 78px;
   }
-  .container {
+  .container,
+.newsletter-wrapper {
     max-width: 576px;
     width: 92%;
   }
@@ -1323,6 +1324,10 @@ img {
   }
 }
 @media (max-width: 576px) {
+  .container,
+.newsletter-wrapper {
+    max-width: 500px;
+  }
   .logo {
     width: 99px;
   }
@@ -1514,5 +1519,20 @@ img {
   }
   .cards__block {
     margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding-top: 30px;
+  }
+  .container,
+.newsletter-wrapper {
+    max-width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-top {
+    width: 85%;
   }
 }/*# sourceMappingURL=style.css.map */

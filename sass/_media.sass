@@ -146,7 +146,8 @@
 @media (max-width: 768px)
   body
     padding-top: 78px
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 576px // 700px
     width: 92%      
   .navbar            
@@ -292,6 +293,9 @@
       width: 540px 
       
 @media ( max-width: 576px )
+  .container,
+  .newsletter-wrapper
+    max-width: 500px
   .logo
     width: 99px 
   .hotel
@@ -445,6 +449,18 @@
     justify-self: start
     &__block
       margin: 0
+
+@media (max-width: 480px)
+  body
+    padding-top: 30px
+  .container,
+  .newsletter-wrapper   
+    max-width: 100%
+  .navbar
+    width: 100%
+    &-top
+      width: 85%
+      
   
 
     

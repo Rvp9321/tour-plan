@@ -1132,7 +1132,7 @@ img {
     grid-column: span 6;
   }
   .footer__send {
-    width: 540px;
+    width: 100%;
   }
   .footer__send-message {
     grid-column: span 5;
@@ -1535,7 +1535,13 @@ img {
   .navbar-top {
     width: 100%;
   }
+  .search__input {
+    width: 100%;
+  }
   .footer__send {
+    width: 100%;
+  }
+  .footer__required-fields {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

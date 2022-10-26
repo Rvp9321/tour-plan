@@ -928,6 +928,7 @@ img {
   font-size: 12px;
   line-height: 15px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .footer__info {
   color: #E0E0E0;

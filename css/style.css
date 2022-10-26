@@ -1533,6 +1533,9 @@ img {
     width: 100%;
   }
   .navbar-top {
-    width: 85%;
+    width: 100%;
+  }
+  .footer__send {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

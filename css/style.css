@@ -989,6 +989,13 @@ img {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 .modal__dialog {
   position: fixed;
@@ -1001,6 +1008,13 @@ img {
   border-radius: 8px;
   padding: 33px 88px;
   z-index: 21;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 .modal__close {
   position: absolute;
@@ -1027,6 +1041,18 @@ img {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+}
+.modal__send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__info {
+  color: #E0E0E0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media (max-width: 1200px) {

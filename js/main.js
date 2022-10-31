@@ -44,11 +44,14 @@ $(document).ready(function () {
   closeModalButton.on('click', closeModal);
     
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass('modal__overlay--visible');
-    modalDialog.addClass('modal__dialog--visible');
-  };
+    var targetModal = $(this).attr("data-href"); // взять у этого (this) элемента аттрибут data-href 
+    // var modalOverlay = $(".modal__overlay");
+    // var modalDialog = $(".modal__dialog");
+    // modalOverlay.addClass('modal__overlay--visible');
+    // modalDialog.addClass('modal__dialog--visible');
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible"); // обращаемся к элементу, который имеет идентификатор, кторый хранится в targetModal
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  }
   function closeModal(event) { // event - это на случай если крестик оформлен как... 
     event.preventDefault(); // ...ссылка с href="#" и по клику перекидывает на верх страницы
     var modalOverlay = $(".modal__overlay");

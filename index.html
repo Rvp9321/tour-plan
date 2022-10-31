@@ -109,7 +109,7 @@
             <p class="hotel-description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
           </div>
           <!-- /.hotel-info__text -->
-          <div data-toggle = "modal" class="rating hotel-info__rating">
+          <div data-toggle = "modal" data-href="#rating-modal" class="rating hotel-info__rating">
             <span class="rating-text">User Ratings</span>
             <span class="rating-count">4.5/5</span>
           </div>
@@ -173,7 +173,11 @@
                   </a>
                 </div>
                 <!-- /.booking__call-center -->
-                <button data-toggle="modal" class="button booking__button">View Other Options</button>
+                <button 
+                  data-toggle="modal" 
+                  data-href="#booking-modal" 
+                  class="button booking__button">View Other Options
+                </button>
               </div>
               <!-- /.booking -->
               <div class="map">
@@ -671,13 +675,38 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <div class="modal">
+  <div class="modal" id="booking-modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <img class="modal__close" src="img/close.svg" alt="icon: close">
       <div class="modal__booking">
         <h3 class="modal__title">booking</h3>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__required-fields">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+            <input type="text" class="input modal__input" placeholder="Email*" name="email">
+          </div>
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="modal__send">
+            <button class="button modal__button">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+          <!-- /.modal__send -->
+        </form>
+      </div>
+      <!-- /.modal__contact-form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal --><div class="modal" id="rating-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <img class="modal__close" src="img/close.svg" alt="icon: close">
+      <div class="modal__booking">
+        <h3 class="modal__title">send us feedback</h3>
         <form action="#" method="post" class="modal__form">
           <div class="modal__required-fields">
             <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">

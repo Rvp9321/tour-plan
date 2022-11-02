@@ -433,7 +433,7 @@
       </h2>
       <!-- /.newsletter-title -->
       <form action="subscribe.php" method="post" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required>
         <button class="subscribe__button">
           Send
         </button>
@@ -648,8 +648,8 @@
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="post" class="footer__form">
             <div class="footer__required-fields">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="3">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
             </div>            
             <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
             <div class="footer__send">
@@ -682,11 +682,11 @@
       <img class="modal__close" src="img/close.svg" alt="icon: close">
       <div class="modal__booking">
         <h3 class="modal__title">booking</h3>
-        <form action="#" method="post" class="modal__form">
+        <form action="send.php" method="post" class="modal__form" id="modalForm">
           <div class="modal__required-fields">
-            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-            <input type="text" class="input modal__input" placeholder="Email*" name="email">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="3">
+            <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
           </div>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <div class="modal__send">
@@ -710,9 +710,9 @@
         <h3 class="modal__title">send us feedback</h3>
         <form action="#" method="post" class="modal__form">
           <div class="modal__required-fields">
-            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-            <input type="text" class="input modal__input" placeholder="Email*" name="email">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="3">
+            <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
           </div>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <div class="modal__send">
@@ -727,8 +727,10 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-  <script src="js/jquery-3.6.1.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script> 
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js" type="text/javascript"></script>
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax/parallax.js"></script>

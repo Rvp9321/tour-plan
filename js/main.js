@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$( document ).ready(function() {
   const hotelSwiper = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
@@ -71,5 +71,22 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   };
   
+  // Обработка (валидация) форм
+  /* $("#modalForm").validate({
+  debug: true
+  }); */
+
+  /* if (jquery.validate.min.js) {
+  console.log('jquery-ui is loaded successfully') 
+  }
+
+  if (jQuery().main.js) {
+    console.log("Делаем что-либо, если плагин загружен")
+  } else {
+    console.log("Плагин не загружен")
+  } */
+
+  // Маска для поля ввода номера телефона
+  $('input[name="phone"]').mask("+7(999) 999-9999");
 
 });

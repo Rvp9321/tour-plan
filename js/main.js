@@ -72,9 +72,18 @@ $( document ).ready(function() {
   };
   
   // Обработка (валидация) форм
-  /* $("#modalForm").validate({
-  debug: true
-  }); */
+  /* $(".form").each(function() {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Укажите имя",
+          minlength: "имя должно быть не короче 3-х букв"
+        },
+        phone: {
+          required: "Обязательное поле",
+        },
+      },
+    }); */
 
   /* if (jquery.validate.min.js) {
   console.log('jquery-ui is loaded successfully') 

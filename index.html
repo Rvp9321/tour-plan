@@ -12,24 +12,25 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="navbar navbar__mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" data-aos="fade-up" data-aos-delay="100">
           <img src="/img/horizontal-logo.svg" 
           alt="Logo: Best tour plan"  
           class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" data-aos="fade-up" data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" >
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-up" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" >
           <span class="user__Name">Nathan</span>
         </a>
@@ -103,7 +104,7 @@
               </div>
               <!-- /.stars -->
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-              <span class="offer hotel-info__offer">Flash Offer</span>              
+              <span class="offer hotel-info__offer" data-aos="flip-left" data-aos-duration="500">Flash Offer</span>              
             </div>
             <!-- /.hotel-wrapper -->
             <p class="hotel-description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
@@ -144,7 +145,7 @@
             </div>
             <!-- ./swiper -->
             <div class="hotel-right">
-              <div class="booking">
+              <div class="booking" data-aos="flip-left" data-aos-duration="500">
                 <div class="booking__info">
                   <div class="booking__price">
                     <span class="booking__start">price starts as</span>
@@ -536,25 +537,25 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card card__item">
+        <div class="card card__item" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card card__item">
+        <div class="card card__item" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card card__item">
+        <div class="card card__item" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card card__item">
+        <div class="card card__item" data-aos="fade-up" data-aos-delay="400">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -731,6 +732,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax/parallax.js"></script>

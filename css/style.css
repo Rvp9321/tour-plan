@@ -53,6 +53,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -371,7 +375,10 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  cursor: pointer;
+  cursor: point;
+}
+.booking__button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .map {
@@ -646,6 +653,9 @@ img {
   font-size: 12px;
   line-height: 16px;
 }
+.card__button:hover {
+  transform: scale(1.1, 1.1);
+}
 
 .packages {
   padding-top: 40px;
@@ -713,6 +723,9 @@ img {
   font-size: 14px;
   line-height: 19px;
   cursor: pointer;
+}
+.packages-element__button:hover {
+  transform: scale(1.1, 1.1);
 }
 .packages-double {
   grid-column-start: 1;
